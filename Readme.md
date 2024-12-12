@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Алексей Соломин](https://up.htmlacademy.ru/adaptive-individual/2/user/2495203).
-* Наставник: [Случайный наставник](https://htmlacademy.ru/).
+* Наставник: [Иван Жарков](https://htmlacademy.ru/profile/id191422).
 
 ---
 
