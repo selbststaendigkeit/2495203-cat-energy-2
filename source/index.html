@@ -19,14 +19,13 @@
           <source media="(min-width: 768px)" srcset="#" type="image/webp">
           <img class="page-header__logo-image" src="#" alt="Логотип Cat Energy" width="33" height="38">
         </picture>
-        <span><b>Cat</b> Energy</span>
+        <img class="page-header__text-logo" src="#" width="24" height="24" alt="Cat Energy">
       </a>
       <button class="page-header__mobile-menu-toggler" type="button">
         <span class="visually-hidden">Переключить мобильное меню</span>
-        <img src="#" alt="Иконка-бургер" width="24" height="24">
       </button>
-      <nav class="page-header__menu ">
-        <ul class="page-header__menu-list">
+      <nav class="page-header__menu">
+        <ul class="page-header__menu-list page-header__menu-list--main-page">
           <li class="page-header__menu-item page-header__menu-item--current">
             <a class="page-header__menu-link" href="#">
               Главная
@@ -68,7 +67,7 @@
     <section class="page__targets targets">
       <h2 class="visually-hidden">Какую цель Вы хотите достичь?</h2>
       <ul class="targets__list">
-        <li class="targets__list-item">
+        <li class="targets__list-item targets__list-item--slimming">
           <h3 class="targets__item-title accented-text">
             Похудение
           </h3>
@@ -79,7 +78,7 @@
             Каталог slim
           </a>
         </li>
-        <li class="targets__list-item">
+        <li class="targets__list-item targets__list-item--gaining">
           <h3 class="targets__item-title accented-text">
             Набор массы
           </h3>
@@ -151,12 +150,8 @@
     </section>
 
     <footer class="page__footer page-footer">
-      <div class="page-footer__collaboration">
-        <p class="page-footer__collaboration-title accented-text">
-          <span>приглашаем</span>
-          <span>к сотрудничеству</span>
-          <span>дилеров!</span>
-        </p>
+      <div class="page-footer__collaboration page-footer__collaboration--main">
+        <p class="page-footer__collaboration-title accented-text">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
         <address class="page-footer__address">
           <p>ул. Большая<br>
             Конюшенная, д. 19/8</p>
@@ -170,7 +165,9 @@
         <div class="page-footer__bottom-wrapper">
           <ul class="page-footer__item-list">
             <li class="page-footer__logo">
-              <a class="page-footer__logo-link" href="/"><b>Cat</b> Energy</a>
+              <a class="page-footer__logo-link" href="/">
+                <img class="page-footer__text-logo" src="#" width="24" height="24" alt="Cat Energy">
+              </a>
             </li>
             <li>
               <ul class="page-footer__social-list">
@@ -181,12 +178,12 @@
                 </li>
                 <li class="page-footer__social-item">
                   <a class="page-footer__social-link page-footer__social-link--youtube" href="#" title="Youtube">
-                    <span class="visually-hidden">youtube</span>
+                    <span class="visually-hidden">Youtube</span>
                   </a>
                 </li>
                 <li class="page-footer__social-item">
                   <a class="page-footer__social-link page-footer__social-link--telegram" href="#" title="telegram">
-                    <span class="visually-hidden">telegram</span>
+                    <span class="visually-hidden">Telegram</span>
                   </a>
                 </li>
               </ul>
