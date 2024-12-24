@@ -6,6 +6,10 @@
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -15,8 +19,8 @@
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="/">
         <picture>
-          <source media="(min-width: 1440px)" srcset="#" type="image/webp">
-          <source media="(min-width: 768px)" srcset="#" type="image/webp">
+          <source media="(min-width: 1440px)" srcset="#" type="image/png">
+          <source media="(min-width: 768px)" srcset="#" type="image/png">
           <img class="page-header__logo-image" src="#" alt="Логотип Cat Energy" width="33" height="38">
         </picture>
         <img class="page-header__text-logo" src="#" width="24" height="24" alt="Cat Energy">
@@ -54,9 +58,9 @@
           Занялся собой? Займись котом!
         </p>
         <picture class="intro__picture">
-          <source media="(min-width: 1440px)" srcset="#" type="image/webp">
-          <source media="(min-width: 768px)" srcset="#" type="image/webp">
-          <img class="intro__promo-image" src="#" alt="Стакан корма Cat Energy" width="280" height="270">
+          <source media="(min-width: 1440px)" srcset="./images/intro-cat-desktop@1x.png 1x, ./images/intro-cat-desktop@2x.png 2x" type="image/png" width="552" height="499">
+          <source media="(min-width: 768px)" srcset="./images/intro-cat-tablet@1x.png 1x, ./images/intro-cat-tablet@2x.png 2x" type="image/png" width="709" height="609">
+          <img class="intro__promo-image" src="./images/intro-cat-mobile@1x.png" srcset="./images/intro-cat-mobile@2x.png 2x" alt="Стакан корма Cat Energy" width="280" height="270">
         </picture>
         <a class="intro__choose-program button button--primary" href="#">
           Подобрать программу
@@ -139,11 +143,12 @@
           <button class="example__slider-button" type="button">
             <span class="visually-hidden">Кнопка управления слайдером</span>
           </button>
-          <picture class="example__sliding-picture">
-            <source media="(min-width: 1440px)" srcset="#" type="image/webp">
-            <source media="(min-width: 768px)" srcset="#" type="image/webp">
-            <img class="example__sliding-picture-image" src="#" alt="Худой кот" width="280" height="256" loading="lazy">
-          </picture>
+          <div class="example__after-container">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./images/slider-tiny-cat-tablet@1x.png 1x, /images/slider-tiny-cat-tablet@2x.png 2x" width="560" height="512" type="image/png">
+              <img class="example__after-image" src="./images/slider-tiny-cat-mobile@1x.png" srcset="./images/slider-tiny-cat-mobile@2x.png 2x" alt="Худой кот" width="280" height="256" loading="lazy">
+            </picture>
+          </div>
         </div>
 
       </div>
@@ -159,7 +164,11 @@
         </address>
       </div>
       <div class="page-footer__map-wrapper">
-
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./images/map-image-desktop@1x.jpg 1x, ./images/map-image-desktop@2x.jpg 2x" width="1440" height="400" type="image/jpeg">
+          <source media="(min-width: 768px)" srcset="./images/map-image-tablet@1x.jpg 1x, ./images/map-image-tablet@2x.jpg 2x" width="768" height="400" type="image/jpeg">
+          <img class="page-footer__map-image" src="./images/map-image-mobile@1x.jpg" srcset="./images/map-image-mobile@2x.jpg 2x" alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург" width="320" height="362" loading="lazy">
+        </picture>
       </div>
       <div class="page-footer__bottom">
         <div class="page-footer__bottom-wrapper">
