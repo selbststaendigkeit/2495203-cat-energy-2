@@ -4,4 +4,18 @@
 @import "./common/fonts.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/page.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/visually-hidden.scss";
+@import "./blocks/page-main.scss";
+@import "./blocks/intro.scss";
+@import "./blocks/accented-text.scss";
+@import "./blocks/button.scss";
+@import "./blocks/targets.scss";
+@import "./blocks/features.scss";
+@import "./blocks/example.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/good.scss";
+@import "./blocks/additional-goods.scss";
+@import "./blocks/subscribe.scss";
