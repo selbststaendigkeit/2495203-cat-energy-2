@@ -1,0 +1,25 @@
+
+
+.page-footer__collaboration {
+  &--inner {
+    background-color: $bg-grey;
+  }
+}
+
+.page-footer__collaboration-title {
+  font-size: 16px;
+  line-height: 20px;
+  color: $secondary-black;
+  text-transform: uppercase;
+}
+
+.page-footer__address {
+  color: $special-dark-grey;
+  font-style: normal;
+}
+
+.page-footer__academy-link {
+  font-size: 16px;
+  line-height: 20px;
+  color: $special-dark-grey;
+}

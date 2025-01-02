@@ -1,0 +1,28 @@
+
+
+.additional-goods__heading {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.additional-goods__item-title {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $card-title;
+}
+
+.additional-goods__item-pricing {
+  line-height: 14px;
+  color: $special-dark-grey;
+}
+
+.additional-goods__promo {
+  background: linear-gradient(rgba($basic-green, 0.85), rgba($basic-green, 0.85));
+}
+
+.additional-goods__promo-text {
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-white;
+}
