@@ -1,0 +1,22 @@
+.page-header__menu-list {
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $basic-black;
+}
+
+.page-header__menu-item {
+  background-color: $basic-white;
+}
+
+.page-header__menu-link {
+  color: inherit;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

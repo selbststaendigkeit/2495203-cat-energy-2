@@ -1,0 +1,21 @@
+
+
+.subscribe__heading {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.subscribe__appeal {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.subscribe__email-input {
+  font-size: 20px;
+  color: $special-dark-grey;
+  text-transform: uppercase;
+
+  &::placeholder {
+    color: $special-dark-grey;
+  }
+}

@@ -1,0 +1,27 @@
+.example {
+  background-color: $bg-grey;
+}
+
+.example__heading {
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.example__description {
+  color: $special-dark-grey;
+}
+
+.example__index-amount {
+  font-size: 24px;
+  line-height: 24px;
+  text-decoration: uppercase;
+}
+
+.example__index-title {
+  font-size: 12px;
+  color: $special-dark-grey;
+}
+
+.example__total {
+  text-transform: uppercase;
+}
