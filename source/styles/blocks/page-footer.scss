@@ -18,6 +18,29 @@
   font-style: normal;
 }
 
+.page-footer__social-link {
+  display: block;
+  width: 28px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--vk {
+    background-image: url("../../icons/stack.svg#vk-icon");
+    background-size: 27px 17px;
+  }
+
+  &--youtube {
+    background-image: url("../../icons/stack.svg#youtube-icon");
+    background-size: 24px 19px;
+  }
+
+  &--telegram {
+    background-image: url("../../icons/stack.svg#telegram-icon");
+    background-size: 20px 17px;
+  }
+}
+
 .page-footer__academy-link {
   font-size: 16px;
   line-height: 20px;
