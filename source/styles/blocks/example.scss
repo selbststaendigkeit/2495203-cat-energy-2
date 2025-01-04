@@ -28,33 +28,57 @@
 
 .example__slider-button {
   position: relative;
+  left: 100px;
   display: block;
   height: 100px;
   width: 4px;
   border-radius: 2px;
   background-color: $special-grey-3;
-}
-
-.example__arrows {
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: $basic-white;
-  outline: 2px solid $special-grey-3;
-  border-radius: 50%;
 
   &::before {
     content: "";
     display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 40px;
     height: 40px;
-    background-color: $special-grey-3;
+    background: $basic-white;
+    outline: 2px solid $special-grey-3;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 18px;
+    background-color: inherit;
     mask-image: url("../../icons/stack.svg#comparison-arrows");
-    mask-size: 24px 18px;
+    mask-size: 100%;
     mask-repeat: no-repeat;
     mask-position: center;
     cursor: pointer;
+  }
+
+  &:hover {
+    background-color: $basic-green;
+
+    &::before {
+      outline-color: $basic-green;
+    }
+  }
+
+  &:active {
+    background-color: rgba($basic-green-2, 0.6);
+
+    &::before {
+      outline-color: rgba($basic-green-2, 0.6);
+    }
   }
 }

@@ -1,4 +1,19 @@
 
+.page-header__logo {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .page-header__mobile-menu-toggler {
   width: 20px;
   height: 20px;
