@@ -19,13 +19,13 @@
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="/">
         <picture>
-          <source media="(min-width: 1440px)" srcset="#" type="image/png">
-          <source media="(min-width: 768px)" srcset="#" type="image/png">
-          <img class="page-header__logo-image" src="#" alt="Логотип Cat Energy" width="33" height="38">
+          <source media="(min-width: 1440px)" srcset="./images/image-logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="./images/image-logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+          <img class="page-header__logo-image" src="./images/image-logo-mobile.svg" alt="Логотип Cat Energy" width="33" height="38">
         </picture>
-        <img class="page-header__text-logo" src="#" width="24" height="24" alt="Cat Energy">
+        <img class="page-header__text-logo" src="./images/text-logo.svg" width="101" height="18" alt="Cat Energy">
       </a>
-      <button class="page-header__mobile-menu-toggler" type="button">
+      <button class="page-header__mobile-menu-toggler page-header__mobile-menu-toggler--closed" type="button">
         <span class="visually-hidden">Переключить мобильное меню</span>
       </button>
       <nav class="page-header__menu accented-text">
@@ -142,6 +142,7 @@
         <div class="example__image-slider">
           <button class="example__slider-button" type="button">
             <span class="visually-hidden">Кнопка управления слайдером</span>
+            <span class="example__arrows"></span>
           </button>
           <div class="example__after-container">
             <picture>
@@ -175,7 +176,7 @@
           <ul class="page-footer__item-list">
             <li class="page-footer__logo">
               <a class="page-footer__logo-link" href="/">
-                <img class="page-footer__text-logo" src="#" width="24" height="24" alt="Cat Energy">
+                <img class="page-footer__text-logo" src="./images/text-logo.svg" width="128" height="24" alt="Cat Energy">
               </a>
             </li>
             <li>
@@ -200,7 +201,7 @@
             <li class="page-footer__academy">
               <a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
                 <span>HTML Academy</span>
-                <img src="#" alt="Логотип HTML Academy" width="27" height="34" loading="lazy">
+                <img src="./images/academy-icon.svg" alt="Логотип HTML Academy" width="27" height="34" loading="lazy">
               </a>
             </li>
           </ul>

@@ -25,3 +25,36 @@
 .example__total {
   text-transform: uppercase;
 }
+
+.example__slider-button {
+  position: relative;
+  display: block;
+  height: 100px;
+  width: 4px;
+  border-radius: 2px;
+  background-color: $special-grey-3;
+}
+
+.example__arrows {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: $basic-white;
+  outline: 2px solid $special-grey-3;
+  border-radius: 50%;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: $special-grey-3;
+    mask-image: url("../../icons/stack.svg#comparison-arrows");
+    mask-size: 24px 18px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    cursor: pointer;
+  }
+}

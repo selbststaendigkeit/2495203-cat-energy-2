@@ -19,6 +19,17 @@
 
 .additional-goods__promo {
   background: linear-gradient(rgba($basic-green, 0.85), rgba($basic-green, 0.85));
+
+  &::before {
+    content: "";
+    display: block;
+    width: 78px;
+    height: 80px;
+    background-image: url("../../icons/stack.svg#gift-icon");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .additional-goods__promo-text {

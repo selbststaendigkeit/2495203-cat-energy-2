@@ -7,4 +7,42 @@
 
 .features__item {
   color: $special-dark-grey;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: $basic-green;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--useful {
+    &::before {
+      background-image: url("../../icons/stack.svg#leaf-icon");
+      background-size: 25px 28px;
+    }
+  }
+
+  &--powder {
+    &::before {
+      background-image: url("../../icons/stack.svg#chemistry-icon");
+      background-size: 26px 29px;
+    }
+  }
+
+  &--handy {
+    &::before {
+      background-image: url("../../icons/stack.svg#eating-icon");
+      background-size: 25px 30px;
+    }
+  }
+
+  &--fast {
+    &::before {
+      background-image: url("../../icons/stack.svg#weight-icon");
+      background-size: 26px 31px;
+    }
+  }
 }
