@@ -1,7 +1,41 @@
+.targets__wrapper {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding-top: 82px;
+  }
+}
+
+.targets__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 80px;
+  }
+}
 
 .targets__list-item {
   position: relative;
+  padding: 30px 20px 18px;
   line-height: 18px;
   background-color: $basic-grey;
 
@@ -11,7 +45,7 @@
     width: 50px;
     height: 50px;
     position: absolute;
-    top: 20px;
+    top: 24px;
     left: 20px;
     background-color: $basic-green;
     border-radius: 50%;
@@ -26,41 +60,160 @@
     background-size: contain;
   }
 
+  @media (min-width: $tablet-width) {
+    padding: 77px 316px 53px 52px;
+    line-height: inherit;
+
+    &::before {
+      top: 92px;
+      right: 63px;
+      left: auto;
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 50%;
+    padding: 77px 63px 55px 52px;
+
+    &::before {
+      top: 47px;
+      right: auto;
+      left: 52px;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
   &--slimming {
     &::after {
       width: 36px;
       height: 50px;
-      top: 20px;
-      left: 20px;
+      top: 21px;
+      left: 27px;
       background-image: url("../../icons/stack.svg#egyptian-cat-icon");
+    }
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        width: 140px;
+        height: 194px;
+        top: 81px;
+        right: 93px;
+        left: auto;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        width: 70px;
+        height: 97px;
+        top: 41px;
+        right: auto;
+        left: 67px;
+      }
     }
   }
 
   &--gaining {
     &::after {
-      width: 72px;
-      height: 50px;
-      top: 20px;
-      left: 20px;
+      width: 67px;
+      height: 28px;
+      top: 35px;
+      left: 12px;
       background-image: url("../../icons/stack.svg#panther-icon");
+    }
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        width: 268px;
+        height: 112px;
+        top: 135px;
+        right: 29px;
+        left: auto;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        width: 134px;
+        height: 56px;
+        top: 67px;
+        left: 33px;
+        right: auto;
+      }
     }
   }
 }
 
 .targets__item-title {
+  margin: 0;
+  margin-left: 70px;
+  margin-bottom: 29px;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+    margin-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+    margin-left: 162px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .targets__item-description {
+  position: relative;
+  width: 227px;
+  margin: 0;
+  margin-bottom: 38px;
   color: $special-dark-grey;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -23px;
+    display: block;
+    width: 240px;
+    height: 1px;
+    background-color: $target-divider;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+    width: 340px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+    width: 454px;
+  }
 }
 
 .targets__item-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-height: 24px;
+  width: fit-content;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  text-decoration: none;
   color: $basic-black;
 
   &::after {
@@ -83,5 +236,12 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    gap: 25px;
+    min-height: 38px;
+    font-size: 20px;
+    line-height: normal;
   }
 }

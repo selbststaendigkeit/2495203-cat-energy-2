@@ -1,21 +1,118 @@
+.subscribe {
+  width: 100%;
+  overflow: hidden;
+}
 
+.subscribe__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding-bottom: 104px;
+  }
+}
 
 .subscribe__heading {
+  margin: 0;
+  margin-bottom: 32px;
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 .subscribe__appeal {
+  margin: 0;
+  margin-bottom: 24px;
   font-size: 16px;
   line-height: 24px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 632px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.subscribe__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 632px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    gap: normal;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 752px;
+  }
+}
+
+.subscribe__form-control {
+  flex-grow: 1;
 }
 
 .subscribe__email-input {
+  width: 100%;
+  padding: 12px;
   font-size: 20px;
   color: $special-dark-grey;
   text-transform: uppercase;
+  border: 1px solid $form-control;
 
   &::placeholder {
     color: $special-dark-grey;
+  }
+
+  &:hover {
+    border-color: $special-grey;
+  }
+
+  &:focus {
+    border-color: $special-dark-grey;
+  }
+
+  &:user-invalid {
+    border-color: $form-control-error;
+  }
+}
+
+.subscribe__button {
+  padding: 15px;
+  font-size: 20px;
+  line-height: 26px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
   }
 }

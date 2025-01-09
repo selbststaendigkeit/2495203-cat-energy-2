@@ -1,0 +1,48 @@
+.decorative-heading {
+  position: relative;
+  width: fit-content;
+  padding-right: 40px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 11px;
+    display: block;
+    height: 2px;
+    width: 100vw;
+    background-color: $basic-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 100%;
+      top: 15px;
+      display: block;
+      height: 2px;
+      width: 100vw;
+      background-color: $basic-green;
+    }
+
+    &::after {
+      top: 15px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+
+    &::before {
+      top: 19px;
+      right: calc(100% + 40px);
+    }
+
+    &::after {
+      top: 19px;
+    }
+  }
+}
