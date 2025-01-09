@@ -17,31 +17,33 @@
 
   <header class="page__header page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo" href="/">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="./images/image-logo-desktop.svg" width="70" height="59" type="image/svg+xml">
-          <source media="(min-width: 768px)" srcset="./images/image-logo-tablet.svg" width="60" height="50" type="image/svg+xml">
-          <img class="page-header__logo-image" src="./images/image-logo-mobile.svg" alt="Логотип Cat Energy" width="33" height="38">
-        </picture>
-        <img class="page-header__text-logo" src="./images/text-logo.svg" width="101" height="18" alt="Cat Energy">
-      </a>
-      <button class="page-header__mobile-menu-toggler page-header__mobile-menu-toggler--closed" type="button">
-        <span class="visually-hidden">Переключить мобильное меню</span>
-      </button>
-      <nav class="page-header__menu accented-text">
-        <ul class="page-header__menu-list page-header__menu-list--main-page">
-          <li class="page-header__menu-item page-header__menu-item--current">
-            <a class="page-header__menu-link" href="#">
+      <div class="page-header__mobile-top-row">
+        <a class="page-header__logo" href="/">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="./images/image-logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+            <source media="(min-width: 768px)" srcset="./images/image-logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+            <img class="page-header__logo-image" src="./images/image-logo-mobile.svg" alt="Логотип Cat Energy" width="33" height="38">
+          </picture>
+          <img class="page-header__text-logo" src="./images/text-logo.svg" width="101" height="18" alt="Cat Energy">
+        </a>
+        <button class="page-header__mobile-menu-toggler page-header__mobile-menu-toggler--closed" type="button">
+          <span class="visually-hidden">Переключить мобильное меню</span>
+        </button>
+      </div>
+      <nav class="page-header__menu page-header__menu--closed accented-text">
+        <ul class="page-header__menu-list">
+          <li class="page-header__menu-item">
+            <a class="page-header__menu-link page-header__menu-link--active page-header__menu-link--changeable" href="#">
               Главная
             </a>
           </li>
           <li class="page-header__menu-item">
-            <a class="page-header__menu-link" href="/catalog.html">
+            <a class="page-header__menu-link page-header__menu-link--changeable" href="/catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="page-header__menu-item">
-            <a class="page-header__menu-link" href="#">
+            <a class="page-header__menu-link page-header__menu-link--changeable" href="#">
               Подбор программы
             </a>
           </li>
@@ -69,30 +71,32 @@
     </section>
 
     <section class="page__targets targets">
-      <h2 class="visually-hidden">Какую цель Вы хотите достичь?</h2>
-      <ul class="targets__list">
-        <li class="targets__list-item targets__list-item--slimming">
-          <h3 class="targets__item-title accented-text">
-            Похудение
-          </h3>
-          <p class="targets__item-description">
-            Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
-          </p>
-          <a class="targets__item-link accented-text" href="#">
-            Каталог slim
-          </a>
-        </li>
-        <li class="targets__list-item targets__list-item--gaining">
-          <h3 class="targets__item-title accented-text">
-            Набор массы
-          </h3>
-          <p class="targets__item-description">
-            Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="targets__item-link accented-text" href="#">
-            Каталог pro
-          </a>
-        </li>
-      </ul>
+      <div class="targets__wrapper">
+        <h2 class="visually-hidden">Какую цель Вы хотите достичь?</h2>
+        <ul class="targets__list">
+          <li class="targets__list-item targets__list-item--slimming">
+            <h3 class="targets__item-title accented-text">
+              Похудение
+            </h3>
+            <p class="targets__item-description">
+              Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+            </p>
+            <a class="targets__item-link accented-text" href="#">
+              Каталог slim
+            </a>
+          </li>
+          <li class="targets__list-item targets__list-item--gaining">
+            <h3 class="targets__item-title accented-text">
+              Набор массы
+            </h3>
+            <p class="targets__item-description">
+              Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="targets__item-link accented-text" href="#">
+              Каталог pro
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="page__features features">
@@ -134,8 +138,8 @@
               </li>
             </ul>
             <div class="example__total accented-text">
-              <p>Затраты на питание:</p>
-              <p>15 000 руб.</p>
+              <p class="example__total-text">Затраты на питание:</p>
+              <p class="example__total-text">15 000 руб.</p>
             </div>
           </div>
         </div>
@@ -143,9 +147,15 @@
           <button class="example__slider-button" type="button">
             <span class="visually-hidden">Кнопка управления слайдером</span>
           </button>
+          <div class="example__before-container">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./images/slider-fat-cat-tablet@1x.png 1x, ./images/slider-fat-cat-tablet@2x.png 2x" width="560" height="512" type="image/png">
+              <img class="example__before-image" src="./images/slider-fat-cat-mobile@1x.png" srcset="./images/slider-fat-cat-mobile@2x.png 2x" alt="Толстый кот" width="280" height="256" loading="lazy">
+            </picture>
+          </div>
           <div class="example__after-container">
             <picture>
-              <source media="(min-width: 768px)" srcset="./images/slider-tiny-cat-tablet@1x.png 1x, /images/slider-tiny-cat-tablet@2x.png 2x" width="560" height="512" type="image/png">
+              <source media="(min-width: 768px)" srcset="./images/slider-tiny-cat-tablet@1x.png 1x, ./images/slider-tiny-cat-tablet@2x.png 2x" width="560" height="512" type="image/png">
               <img class="example__after-image" src="./images/slider-tiny-cat-mobile@1x.png" srcset="./images/slider-tiny-cat-mobile@2x.png 2x" alt="Худой кот" width="280" height="256" loading="lazy">
             </picture>
           </div>
@@ -156,12 +166,14 @@
 
     <footer class="page__footer page-footer">
       <div class="page-footer__collaboration page-footer__collaboration--main">
-        <p class="page-footer__collaboration-title accented-text">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-        <address class="page-footer__address">
-          <p>ул. Большая<br>
-            Конюшенная, д. 19/8</p>
-          <p>Санкт-Петербург</p>
-        </address>
+        <div class="page-footer__collaboration-wrapper">
+          <p class="page-footer__collaboration-title accented-text">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <address class="page-footer__address">
+            <p class="page-footer__address_paragraph">ул. Большая<br>
+              Конюшенная, д. 19/8</p>
+            <p class="page-footer__address_paragraph">Санкт-Петербург</p>
+          </address>
+        </div>
       </div>
       <div class="page-footer__map-wrapper">
         <picture>
@@ -173,12 +185,12 @@
       <div class="page-footer__bottom">
         <div class="page-footer__bottom-wrapper">
           <ul class="page-footer__item-list">
-            <li class="page-footer__logo">
+            <li class="page-footer__logo page-footer__bottom-chapter">
               <a class="page-footer__logo-link" href="/">
                 <img class="page-footer__text-logo" src="./images/text-logo.svg" width="128" height="24" alt="Cat Energy">
               </a>
             </li>
-            <li>
+            <li class="page-footer__social page-footer__bottom-chapter">
               <ul class="page-footer__social-list">
                 <li class="page-footer__social-item">
                   <a class="page-footer__social-link page-footer__social-link--vk" href="#" title="Вконтакте">
@@ -197,7 +209,7 @@
                 </li>
               </ul>
             </li>
-            <li class="page-footer__academy">
+            <li class="page-footer__academy page-footer__bottom-chapter">
               <a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>

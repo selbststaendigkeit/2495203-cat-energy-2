@@ -1,27 +1,165 @@
-
+.page-footer {
+  position: relative;
+}
 
 .page-footer__collaboration {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: 0;
+    right: 0;
+    width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   &--inner {
     background-color: $bg-grey;
+
+    @media (min-width: $desktop-width) {
+      background: none;
+    }
+  }
+}
+
+.page-footer__collaboration-wrapper {
+  width: 280px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 26px;
+  padding-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 61px 40px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 565px;
+    height: 199px;
+    margin: 0;
+    padding: 60px 79px;
+    background-color: $basic-white;
   }
 }
 
 .page-footer__collaboration-title {
+  width: 140px;
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
   color: $secondary-black;
   text-transform: uppercase;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .page-footer__address {
+  width: 140px;
   color: $special-dark-grey;
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 157px;
+    line-height: 20px;
+  }
+}
+
+.page-footer__address_paragraph {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+}
+
+.page-footer__map-image {
+  display: block;
+  width: 100%;
+  height: 362px;
+  object-fit: cover;
+  object-position: center;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
+.page-footer__bottom {
+  background-color: $basic-grey;
+}
+
+.page-footer__bottom-wrapper {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 55px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 66px 0;
+  }
+}
+
+.page-footer__item-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__bottom-chapter {
+  width: 100%;
+  padding: 20px 0;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $target-divider;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: fit-content;
+
+    &:not(:last-child) {
+      border: none;
+    }
+  }
+}
+
+.page-footer__logo {
+  @media (min-width: $tablet-width) {
+    width: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .page-footer__logo-link {
   display: block;
-  width: fit-content;
-  height: fit-content;
+  width: 100%;
+  text-align: center;
 
   &:hover {
     opacity: 0.8;
@@ -32,10 +170,42 @@
   }
 }
 
-.page-footer__social-link {
+.page-footer__text-logo {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-footer__social {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.page-footer__social-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  width: 132px;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.page-footer__social-item {
   width: 28px;
   height: 22px;
+}
+
+.page-footer__social-link {
+  display: block;
+  width: 100%;
+  height: 100%;
 
   &::before {
     content: "";
@@ -82,9 +252,14 @@
 }
 
 .page-footer__academy-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   font-size: 16px;
   line-height: 20px;
   color: $special-dark-grey;
+  text-decoration: none;
 
   &::after {
     content: "";
@@ -106,5 +281,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 2px 0;
+    gap: 23px;
   }
 }

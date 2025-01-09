@@ -1,7 +1,10 @@
 /* здесь используйте глобальные переменные */
+
+// Гарнитуры шрифта
 $primary-font: "Lato", "Century Gothic", sans-serif;
 $secondary-font: "Oswald", "Impact", sans-serif;
 
+// Цвета
 $basic-black: #000000;
 $secondary-black: #111111;
 $basic-white: #ffffff;
@@ -12,5 +15,13 @@ $basic-grey: #f2f2f2;
 $special-grey: #cdcdcd;
 $special-grey-2: #ebebeb;
 $special-grey-3: #666666;
+$menu-item-border: #e6e6e6;
 $bg-grey: #eaeaea;
 $card-title: #222222;
+$target-divider: #d9d9d9;
+$form-control: #e7e7e7;
+$form-control-error: #ff8282;
+
+// Брейкпоинты
+$tablet-width: 768px;
+$desktop-width: 1440px;

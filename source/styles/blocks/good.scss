@@ -1,14 +1,150 @@
+.good__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 25px;
 
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin: 0;
+    padding: 161px 37px 40px;
+    background-color: $basic-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 151px 38px 40px;
+  }
+}
+
+.good__picture-link {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  display: flex;
+  width: 140px;
+  height: 107px;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 210px;
+    top: -71px;
+    right: 0;
+    margin: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
+}
+
+.good__image {
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.good__heading-link {
+  width: 76px;
+  margin-right: 64px;
+  margin-bottom: 14px;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    width: 135px;
+    margin: 0;
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 140px;
+    margin-bottom: 18px;
+  }
+}
 
 .good__title {
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   color: $basic-black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
 }
 
 .good__table {
+  width: 140px;
+  margin-bottom: 21px;
   font-size: 12px;
   line-height: 16px;
   color: $special-dark-grey;
+  border-collapse: collapse;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.good__table-row {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $special-grey;
+  }
+}
+
+.good__feature-name {
+  width: 50%;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 7px;
+    padding-bottom: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 5px;
+    padding-bottom: 8px;
+  }
+}
+
+.good__feature-value {
+  width: 50%;
+  padding: 0;
+  text-align: right;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 7px;
+    padding-bottom: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 5px;
+    padding-bottom: 8px;
+  }
+}
+
+.good__order {
+  align-self: stretch;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+  }
 }
