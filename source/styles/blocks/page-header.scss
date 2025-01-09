@@ -98,6 +98,7 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
+    //stylelint-disable-next-line declaration-no-important
     display: block !important; //!important используется, чтобы меню всегда было видимо на разрешениях, начиная с планшетных
     position: static;
     width: fit-content;
@@ -105,6 +106,12 @@
 
   &--closed {
     display: none;
+  }
+
+  &--nojs {
+    position: static;
+    //stylelint-disable-next-line declaration-no-important
+    display: block !important; //!important используется, чтобы меню было видно при отсутствии скрипта .js
   }
 }
 
