@@ -53,7 +53,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 37px 137px;
+    gap: 38px 59px;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,6 +61,7 @@
     flex-direction: row;
     justify-content: space-between;
     gap: normal;
+    padding-top: 1px;
   }
 }
 
@@ -121,6 +122,12 @@
         content: "1";
       }
     }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        transform: translateX(-6px);
+      }
+    }
   }
 
   &--powder {
@@ -135,6 +142,10 @@
       &::after {
         content: "2";
       }
+    }
+
+    @media (min-width: $desktop-width) {
+      transform: translateX(12px);
     }
   }
 
@@ -151,6 +162,10 @@
         content: "3";
       }
     }
+
+    @media (min-width: $desktop-width) {
+      transform: translateX(9px);
+    }
   }
 
   &--fast {
@@ -165,6 +180,10 @@
       &::after {
         content: "4";
       }
+    }
+
+    @media (min-width: $desktop-width) {
+      transform: translateX(4px);
     }
   }
 }

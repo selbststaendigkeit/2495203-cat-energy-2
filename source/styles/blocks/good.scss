@@ -83,6 +83,10 @@
     line-height: 24px;
     text-align: center;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 2px;
+  }
 }
 
 .good__table {
@@ -98,6 +102,10 @@
     margin-bottom: 32px;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 31px;
   }
 }
 

@@ -31,7 +31,7 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    padding-top: 45px;
+    padding-top: 43px;
     padding-bottom: 101px;
     gap: 104px;
   }
@@ -41,7 +41,7 @@
     align-items: flex-start;
     justify-content: space-between;
     width: 1220px;
-    padding-top: 69px;
+    padding-top: 0;
     padding-bottom: 75px;
   }
 }
@@ -196,8 +196,12 @@
 
 .example__total-text {
   margin: 0;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .example__image-slider {
@@ -208,6 +212,10 @@
     width: 560px;
     height: 512px;
     align-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translateY(-5px);
   }
 }
 

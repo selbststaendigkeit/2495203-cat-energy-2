@@ -15,7 +15,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    padding-bottom: 96px;
+    padding-bottom: 95px;
   }
 }
 
@@ -68,7 +68,7 @@
 .additional-goods__item {
   display: flex;
   flex-direction: column;
-  padding: 13px 0 19px;
+  padding: 12px 0 18px;
   border-top: 1px solid $special-grey;
 
   &:last-child {
@@ -78,7 +78,7 @@
   @media (min-width: $tablet-width) {
     flex-flow: row wrap;
     justify-content: space-between;
-    padding: 26px 38px 28px;
+    padding: 26px 38px 27px;
     gap: 22px;
     border-left: 1px solid $special-grey;
     border-right: 1px solid $special-grey;
@@ -88,7 +88,7 @@
     flex-wrap: nowrap;
     align-items: center;
     gap: normal;
-    padding: 15px 0 17px;
+    padding: 15px 0 16px;
     border-right: none;
     border-left: none;
   }
@@ -124,8 +124,8 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    gap: 49px;
-    align-items: flex-end;
+    gap: 51px;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -140,6 +140,11 @@
 
 .additional-goods__price {
   min-width: 42px;
+  text-align: right;
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .additional-goods__order {
@@ -214,7 +219,7 @@
     align-items: center;
     align-self: flex-start;
     gap: 47px;
-    padding: 58px 42px 45px;
+    padding: 56px 42px 42px;
     background-image:
       linear-gradient(rgba($basic-green, 0.85), rgba($basic-green, 0.85)),
       url("../../images/promo-bg-desktop@1x.jpg");
