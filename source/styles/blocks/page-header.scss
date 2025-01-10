@@ -49,6 +49,11 @@
     opacity: 0.6;
   }
 
+  @media (max-width: $max-mobile-width) {
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
   @media (min-width: $tablet-width) {
     gap: 13px;
   }
@@ -74,6 +79,7 @@
   min-width: 24px;
   height: 24px;
   padding: 0;
+  margin-left: 68px;
   border: none;
   background: none;
   cursor: pointer;
@@ -86,6 +92,10 @@
     background-image: url("../../icons/stack.svg#black-cross");
   }
 
+  &--nojs {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -94,25 +104,24 @@
 .page-header__menu {
   position: absolute;
   z-index: 1;
-  bottom: -202px;
+  bottom: -201px;
   left: 0;
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    //stylelint-disable-next-line declaration-no-important
-    display: block !important; //!important используется, чтобы меню всегда было видимо на разрешениях, начиная с планшетных
     position: static;
     width: fit-content;
   }
 
   &--closed {
-    display: none;
+    @media (max-width: $max-mobile-width) {
+      display: none;
+    }
   }
 
   &--nojs {
     position: static;
-    //stylelint-disable-next-line declaration-no-important
-    display: block !important; //!important используется, чтобы меню было видно при отсутствии скрипта .js
+    display: block;
   }
 }
 
