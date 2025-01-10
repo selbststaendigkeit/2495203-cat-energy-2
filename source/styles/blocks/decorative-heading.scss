@@ -3,6 +3,17 @@
   width: fit-content;
   padding-right: 40px;
 
+  &::before {
+    content: "";
+    position: absolute;
+    right: calc(100% + 40px);
+    top: 11px;
+    display: block;
+    height: 2px;
+    width: 100vw;
+    background-color: $basic-green;
+  }
+
   &::after {
     content: "";
     position: absolute;

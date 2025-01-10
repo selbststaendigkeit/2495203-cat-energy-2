@@ -99,11 +99,18 @@
 }
 
 .page-footer__interactive-map {
+  position: relative;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+
+  &--nojs {
+    display: none;
+  }
 }
 
 .page-footer__iframe {
+  position: relative;
   display: block;
   border: none;
   width: 100%;
