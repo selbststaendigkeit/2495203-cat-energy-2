@@ -33,6 +33,7 @@
   @media (min-width: $tablet-width) {
     width: fit-content;
     padding: 0;
+    align-self: flex-start;
   }
 }
 
@@ -49,13 +50,9 @@
     opacity: 0.6;
   }
 
-  @media (max-width: $max-mobile-width) {
-    justify-content: space-between;
-    flex-grow: 1;
-  }
-
   @media (min-width: $tablet-width) {
     gap: 13px;
+    align-self: flex-start;
   }
 
   @media (min-width: $desktop-width) {
@@ -110,7 +107,12 @@
 
   @media (min-width: $tablet-width) {
     position: static;
+    width: 441px;
+  }
+
+  @media (min-width: $desktop-width) {
     width: fit-content;
+    max-width: 49%;
   }
 
   &--closed {
@@ -136,6 +138,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     gap: 33px;
     min-width: 441px;
     font-size: 18px;
