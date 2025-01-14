@@ -54,6 +54,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 38px 59px;
+    counter-reset: feature;
   }
 
   @media (min-width: $desktop-width) {
