@@ -27,7 +27,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
+    flex-flow: row wrap;
     gap: 80px;
   }
 }
@@ -73,7 +73,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    flex-basis: 50%;
+    width: 570px;
     padding: 77px 63px 55px 52px;
 
     &::before {
